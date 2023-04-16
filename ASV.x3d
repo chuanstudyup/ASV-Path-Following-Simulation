@@ -6,10 +6,10 @@
 <Scene>
 <ProtoDeclare name='Triad'>
 <ProtoInterface>
-<field name='negativeAxes' type='SFInt32' accessType='inputOutput' value='0'/>
-<field name='scale' type='SFVec3f' accessType='inputOutput' value='1 1 1'/>
-<field name='rotation' type='SFRotation' accessType='inputOutput' value='0 0 1 0'/>
 <field name='position' type='SFVec3f' accessType='inputOutput' value='0 0 0'/>
+<field name='rotation' type='SFRotation' accessType='inputOutput' value='0 0 1 0'/>
+<field name='scale' type='SFVec3f' accessType='inputOutput' value='1 1 1'/>
+<field name='negativeAxes' type='SFInt32' accessType='inputOutput' value='0'/>
 </ProtoInterface>
 <ProtoBody>
   <Transform>
@@ -47,7 +47,7 @@
   <Appearance>
     <TextureTransform scale='10 10'>
     </TextureTransform>
-    <ImageTexture url='"*sl3dlib\\objects\\Textures\\General\\water.jpg" '>
+    <ImageTexture url='"water.jpg" '>
     </ImageTexture>
   </Appearance>
   <IndexedFaceSet coordIndex='0 1 2 3'>
@@ -57,10 +57,10 @@
 </Shape>
 <Transform DEF='Triad'  translation='0 0.05 0' scale='10 10 10'>
   <ProtoInstance name='Triad'>
-  <fieldValue name='negativeAxes' value='0'/>
-  <fieldValue name='scale' value='1 1 1'/>
-  <fieldValue name='rotation' value='0 0 1 0'/>
   <fieldValue name='position' value='0 0 0'/>
+  <fieldValue name='rotation' value='0 0 1 0'/>
+  <fieldValue name='scale' value='1 1 1'/>
+  <fieldValue name='negativeAxes' value='0'/>
   </ProtoInstance>
 </Transform>
 <Transform rotation='0 1 0 -1.570796'>
